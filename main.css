@@ -1,0 +1,717 @@
+body{
+    width: 100%;height: 100%;
+}
+.menubar{
+    background-color:dimgray;
+    display: flex;
+    justify-content: space-between; width: 100%;
+}
+
+.menubar div{
+    display:flex;
+    color: white;
+}
+.menubar div a{
+    margin: 10px;
+    font-size: 15px;
+}
+.menubar div a:hover{
+    color:orange;
+    cursor: pointer;
+}
+.menubar div img{
+    width: 60px;height:30px;
+    background: transparent;
+}
+#login {
+    background-color: white;border-radius: 15px;margin:5px;}
+#login a{
+    color: black;font-size: 15px;font-weight: 700;margin:5px;text-decoration: none;
+}
+#login:hover{
+    background-color: greenyellow;
+    cursor: pointer;
+}
+#subname {
+  font-weight:500;font-size: 30px;margin: 50px auto;text-align:center;
+    letter-spacing: 2px;align-content: center;
+ border-bottom: 3px solid orange;width: 150px;
+}
+
+.btn-group {
+    background-color:white;margin-left:41%;
+    
+}
+.btn-group label{
+    font-weight: 600;color: black; padding: 10px 10px ;
+}
+
+
+
+.c{
+    width: 100%;margin-top: 50px;
+    margin:auto;
+    text-align: center;
+    padding: 50px;
+}
+.c-col{
+    flex-basis:33%;
+    margin-bottom: 50px;position: relative;
+    overflow: hidden;
+}
+.c-col img{
+width: 300px;align-content: center;
+}
+.layer{
+    background:transparent;
+    height: 100%;width: 100%;position: absolute;top:0;
+    left:11;
+    transition: 0.5s;
+    
+}
+.layer:hover{
+    background: rgba(128,128,128,0.8);
+    }
+.layer a{
+    left: 150;
+    bottom:-350;font-weight: 700;
+    position:absolute;transition: 0.8s;color: white;font-size: 20px
+}
+.layer:hover a{
+    display:;
+    left:150;
+    bottom: 50%;
+    
+}
+
+
+
+.hero-btn{
+    display: inline-block;text-decoration: none;color:black;border: 3px solid greenyellow;
+    padding: 5px 5px;border-radius: 15px;
+    font-size: 13px;background-color:greenyellow;position: relative;cursor: pointer;
+}
+.hero-btn:hover{
+    border: 3px solid greenyellow;
+    background:greenyellow;
+    transition: 0.5s;
+}
+@media(max-width: 1200px){
+.hero-btn{
+    padding:10px;margin-left:-90px;background-color:greenyellow;
+      }
+}
+@media(max-width: 850px){
+.hero-btn{
+    padding:10px;margin-left:-100px;background-color:greenyellow;
+      }
+}
+
+@media(max-width: 700px){
+    
+    .c-col {
+        flex-basis:auto;
+    display: block;
+}
+    .btn-group {
+    background-color:white;margin-left:12%;
+    
+}
+   #login {
+    background-color: white;border-radius: 10px;margin:1px;margin:10px 0px 6px 3px;}
+#login a{
+    color: black;font-size: 10px;font-weight: 700;margin:2px;text-decoration: none;margin-top: 10px;padding-bottom: 3px;
+    }
+    .hero-btn{
+    padding:10px;margin-left:50px;background-color:greenyellow;
+      }
+}
+
+
+/*-----------------LOGIN---------*/
+
+.center{
+	text-align: center;
+    color:dodgerblue
+}
+.mt-10{
+	margin-top: 10px;
+    
+}
+.mt-20{
+	margin-top: 20px;
+}
+.container{
+	height: 0vh;
+	width: 100%;
+	float: left;
+	margin-top: 100px;
+}
+#LoginAndRegistrationForm{
+	width: 350px;
+
+	margin:100px 0px 50px 540px;
+	border-radius: 10px;
+	box-sizing: border-box;
+	padding: 15px;
+	transform: scale(1.2);
+	box-shadow: 0px 0px 8px 3px #cdcdcd;
+    background-color: white;
+     position: absolute;
+}
+
+#formTitle{
+	text-align: center;
+	padding-top: 10px;
+	font-family: 'Nunito Sans', sans-serif;
+	font-weight: bolder;
+	letter-spacing: 1px;
+	font-size: 25px;
+    color:Gray;text-decoration-line:underline;
+}
+
+.input-text{
+	width: 100%;
+	height: 38px;
+    margin-top: 15px;
+	border:none;background-color:transparent;
+	border-bottom: 2px solid gray;
+	box-sizing: border-box;
+	padding: 5px;color:gray;
+	font-size: 15px;
+	font-family: 'Nunito Sans', sans-serif;
+}
+
+.input-text:focus{
+	outline:none;
+    
+}
+
+.forgot-pass-remember-me{
+	display: flex;
+    margin-top: 30px;
+	gap:90px;
+	font-size: 12px;
+}
+
+.forgot-pass-remember-me #ForgotPassword{
+	color:royalblue;
+	font-weight: bold;
+	transition: 0.4s;
+}
+.forgot-pass-remember-me #ForgotPassword:hover{
+	color: #008d7f;
+}
+
+.forgot-pass-remember-me input{
+	height: 12px;
+}
+.forgot-pass-remember-me label{
+	font-family: 'Nunito Sans', sans-serif;
+}
+.forgot-pass-remember-me a{
+	text-decoration: none;
+	font-family: 'Nunito Sans', sans-serif;
+	font-style: italic;
+}
+.Submit-Btn{
+	width: 50%;
+	height: 40px;
+	border: 0px;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 13px;
+	letter-spacing: 1px;
+	font-family: 'Nunito Sans', sans-serif;
+	font-weight: bolder;
+	transition: 0.4s;
+	background-color:orange;
+	color: #fff;
+}
+.Submit-Btn:hover{
+	background-color:coral;
+	color: #fff;
+	
+}
+.dont-have-account,
+.already-have-account{
+	font-family: 'Nunito Sans', sans-serif;
+	letter-spacing: 0.3px;
+	font-size: 14px;
+	color: #747474;
+}
+.dont-have-account a,
+.already-have-account a{
+	font-family: 'Nunito Sans', sans-serif;
+	font-style: italic !important;
+	text-decoration: none;
+	color: royalblue;
+	font-weight: bold;
+	transition: 0.5s;
+}
+.dont-have-account a:hover,
+.already-have-account a:hover{
+	color: #008d7f;
+}
+
+#RegistrationFrom,
+#ForgotPasswordForm{
+	display: none;
+}
+.error-input{
+	border: 1px solid #ff5b5b;
+}
+.error-message{
+	font-size: 11px; 
+	font-weight: bold; 
+	color: #ff5b5b;
+	text-align: left; 
+	margin: 0px; 
+	padding: 0px; 
+	margin-top: 2px; 
+}
+.body{
+    background-image: linear-gradient(dodgerblue,skyblue,lightblue);background-repeat: no-repeat;background-size: cover;
+}
+
+
+@media(max-width: 1200px){
+    #LoginAndRegistrationForm{
+	width: 350px;
+    margin:100px 0px 50px 380px;
+       
+    }
+}
+@media(max-width: 700px){
+    #LoginAndRegistrationForm{
+	width: 350px;
+
+	margin:100px 0px 50px 50px;
+       
+    }
+}
+/*-----------------------------------------*/
+
+
+
+
+
+#y{
+    color: orange;
+}
+
+.bg-image img {
+  /* The image used */
+
+
+  /* Add the blur effect */
+  filter: blur(8px);position:relative;
+
+width: 100%;
+  /* Full height */
+  height:500px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+      
+}
+
+/* Position text in the middle of the page/image */
+.content {
+  border: 4px solid #f1f1f1;
+  position: absolute;
+  margin-top:10px;
+  margin-left: 320px;
+  transform: translate(-60%, -113%);
+  z-index: 2;
+  width:auto;
+  padding: 10px;
+  
+    height:auto;
+  
+}
+
+
+#w{
+    color: orange;
+}
+.menubar a{
+    color: white;
+    text-decoration: none;
+}
+
+@media(max-width:1800px){
+
+.arrow,.arrow2{
+        margin-left: 40px;color:blue;margin-top: 250px;margin-bottom: 20px;
+    }
+    .booking .datetime1,.datetime{
+        display: flex;margin-top:50px;margin-bottom: 30px;box-shadow: 5px 5px 10px lightgray;
+    }
+    
+
+.datetime,.datetime1 h4{
+    font-size: 18px;margin: 20px;
+}
+.datetime,.datetime1 h6{
+    font-size: 15px;margin: 20px;margin-left: 33px;
+}
+    .datetime #g{
+    color: orange;
+}
+    .datetime #g{
+    color: orange;
+}
+.datetime h4{
+    font-size: 18px;margin: 20px;
+}
+.datetime h6{
+    font-size: 15px;margin: 20px;margin-left: 33px;
+}
+    .subl1{
+        display: flex;border-bottom: 1px solid gray;width: 80%;margin-left: 20px;
+    }
+    .subl1 h4,h6{
+        font-size: 15px;
+    }
+.tname1
+    {
+        margin-left: 50px; padding: 15px;padding-bottom: 0px; margin-top: 20px;margin-bottom: 2px;font-weight: bold;
+    }
+.loc1
+    {
+        margin-left:65px;;margin-bottom: 2px;color: dimgray;
+    }
+    .book1{
+        margin-top: 50px;margin-left: 20px;color: lawngreen;
+    }
+}
+@media(max-width:700px){
+    .arrow,.arrow2{
+        margin-top: 30px;margin-left: 30px
+    }   
+}
+
+/*-----------------Theater--------------*/
+@media(max-width:1800px){
+.cont,.cont2,.cont11{
+  color:white;position:absolute;
+  margin-top:-450px;
+  margin-left: 500px;margin-bottom: 50px;
+  width:300px;
+  padding:5px;
+  text-align:left;
+    height:auto;
+    position:relative;
+    width: auto;
+   }
+    .s:hover{
+        box-shadow: 0px 0px 20px gray;
+    }
+    .s{
+        display: flex;box-shadow:5px 5px 20px lightgray;width: 80%;margin-left: 20px;margin-top: 20px
+        
+    }
+    .xc,.xc1,.x{
+        background-color: gray;color: white;width:30px;padding: 5px 5px;margin-left: 20px;
+    }
+    .xc1{
+        width: 100px;
+        
+    }
+    
+    .fa{
+        padding: 20px;
+    }
+    .x{
+        margin-left: 70px
+    }
+    .l{
+        margin-left: 
+    }
+    .j{
+        margin-left: 50px; display: flex;margin-bottom: 20px;margin-top: 5px;
+    }
+    .s h4,h6{
+        font-size: 15px;
+    }
+.tn
+    {
+        margin-left: 50px; padding: 15px;padding-bottom: 0px; margin-top: 20px;margin-bottom: 2px;font-weight: bold;
+    }
+.lc
+    {
+        margin-left:65px;;margin-bottom: 2px;color: dimgray;
+    }
+    .bk{
+        margin-top: 25px;margin-left: 700px; color: lawngreen;background-color: lightgreen;color:white;border-radius: 20px;padding: 20px
+    }
+    .bk:hover{
+        box-shadow: 0px 0px 15px lightgreen;
+    }
+    .l{
+        margin-left: 80px;width:100%;
+    }
+}
+@media(max-width:1500px){
+    .bk{
+        margin-top: 45px;margin-left: 520px; color: lawngreen;background-color: lightgreen;color:white;border-radius: 20px;padding: 10px
+    }
+    
+}
+@media(max-width:1200px){
+    .bk{
+        margin-top: 45px;margin-left: 420px; color: lawngreen;background-color: lightgreen;color:white;border-radius: 20px;padding: 10px
+    }
+    
+}
+
+@media(max-width:900px){
+    .bk{
+        margin-top: 45px;margin-left: 160px; color: lawngreen;background-color: lightgreen;color:white;border-radius: 20px;padding: 10px
+    }
+    .cont,.cont2,.cont11{
+    color: black; margin-top: 60px;margin-left: 30px;margin-bottom: 10px;
+    }
+    
+}
+@media(max-width:700px){
+    .bk{
+        margin-top: 45px;margin-left: 40px; color: lawngreen;background-color: lightgreen;color:white;border-radius: 20px;padding: 10px
+    }
+    
+}
+
+@media(max-width:550px){
+.tn
+    {
+        margin-left: 50px; padding: 15px;padding-bottom: 0px; margin-top: 20px;margin-bottom: 2px;font-weight: bold;
+    }
+.lc
+    {
+        margin-left:65px;;margin-bottom: 2px;color: dimgray;
+    }
+    .bk{
+        margin-top: 45px;margin-left: 5px; color: lawngreen;background-color: lightgreen;color:white;border-radius: 20px;padding: 10px
+    }
+    .bk:hover{
+        box-shadow: 0px 0px 15px lightgreen;
+    }
+    .l{
+        margin-left: 30px;width:100%;
+    }
+
+
+
+}
+
+.c{
+    width: 80%;margin-top: 50px;
+    margin:auto;
+    text-align: center;
+    padding: 50px;
+}
+
+.c-col1{
+    display: flex; flex-basis:23%;
+    margin-bottom: 50px;position: relative;
+    overflow: hidden;background-color:darkgray;
+}
+.c-col1 img{
+width: 500px;align-content: center;
+}
+.layer1{
+    background:transparent;
+    height: 100%;width: 100%;position: absolute;top:0;
+    left:0;
+    transition: 0.5s;
+    
+}
+.layer1:hover{
+    background: rgba(128,128,128,0.8);
+    }
+.layer1 a{
+    left:50%;
+    bottom:-350;font-weight: 700;
+    position:absolute;transition: 0.8s;color: white;font-size: 20px
+}
+.layer1:hover a{
+    
+    left:50%;
+    bottom:50%;
+    
+}
+
+.name1 p1,p2,p3{
+   font-weight: bold;width: 80%;
+    margin-left:200px;margin-top:100px;
+}
+.name1 p2{
+    color: green;
+}
+
+#name2 x1{
+   font-weight: bold;width: 80%;
+    margin-left:200px;margin-top:100px;
+}
+
+#name2 p1{
+   font-weight: bold;margin-left: 120px;
+}
+#name2 p2{
+    color: green;margin-left: 130px;
+}
+#name2 p3{
+    margin-left: 50px;
+}
+
+/*-----------------footer---------*/
+.footer,.footer1{
+    width: 80%;
+    padding: 30px 0;margin-left:1%;margin-top: 100px;
+    text-align: center;position:relative;
+}
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 100px;
+    margin-left:30%;
+    font-weight: 600;
+}
+.footer p{
+    margin-left:30%;
+}
+.footer1{
+     margin-left:10%;
+}
+.icons{
+    margin-left: 25%;
+}
+.icons .fa{
+    color: #f44336;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+
+.icons .fa{
+    color: #f44336;
+    margin-left:40px;
+}
+
+/*------ph.html poster alignment-------*/
+@media (max-width : 1800px){
+    .hero-btn{
+    padding:10px;margin-left:-50px;background-color:greenyellow;
+      }
+    
+    .name p1{
+        width: 80px;font-weight: bold;
+    }
+    .name p2{
+        margin-left: 10px;color:gray;font-weight: 400;
+    }
+    .name p3{
+        margin-left: 10px;color:gray;font-weight: 600;
+    }
+
+}
+
+
+
+@media (max-width : 455px){
+    .c-col{
+    display:block;
+    margin-bottom: 50px;
+    overflow: hidden;background-color:gary;
+}
+.c-col img{
+width: 250px;align-content: center;
+}
+.layer{
+    background:transparent;
+    height: 100%;width: 100%;position: absolute;top:0;
+    left:0;
+    transition: 0.5s;
+    
+}
+.layer:hover{
+    background: rgba(128,128,128,0.8);
+    }
+.layer a{
+    left:50%;
+    bottom:-350;font-weight: 700;
+    transition: 0.8s;color: white;
+}
+.layer:hover a{
+    
+    left:40%;
+    bottom:50%;
+    
+}
+    .name p1{
+        margin-left: 10px;color: black;font-weight: bold;
+    }
+    .name p2{
+        margin-left: 10px;color:gray;font-weight: 400;
+    }
+    .name p3{
+        margin-left: 10px;color:gray;font-weight: 600;
+    }
+}
+
+
+
+
+
+@media (max-width :700px){
+    .c-col{
+    display:block;
+    margin-bottom: 50px;
+    overflow: hidden;background-color:white;
+}
+.c-col img{
+width: 250px;align-content: center;
+}
+.layer{
+    background:transparent;
+    height: 100%;width: 100%;position: absolute;top:0;
+    left:0;
+    transition: 0.5s;
+    
+}
+.layer:hover{
+    background: rgba(128,128,128,0.8);
+    }
+.layer a{
+    left:50%;
+    bottom:-350;font-weight: 700;
+    transition: 0.8s;color: white;
+}
+.layer:hover a{
+    
+    left:40%;
+    bottom:50%;
+    
+}
+    .name p1{
+        margin-left: 10px;color: black;font-weight: bold;
+    }
+    .name p2{
+        margin-left:20px;color:gray;font-weight: 400;
+    }
+    .name p3{
+        margin-left: 10px;color:gray;font-weight: 600;
+    }
+    .bar{
+        margin-left: 500px;
+    }
+
+
+
+
+
+
+
+
